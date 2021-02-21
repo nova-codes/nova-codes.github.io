@@ -1,0 +1,170 @@
+.catwrap {
+    width: calc(100% - 220px);
+    margin: 0 auto 100px;
+    position: relative;
+    outline: 1px solid var(--black7);
+    background: var(--black3);
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: flex-start;
+    justify-content: space-between; }
+    
+.catwrap:before {
+    content: '';
+    border-left: 1px solid var(--light3);
+    border-top: 1px solid var(--light3);
+    display: flex;
+    padding: 5px;
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    width: 50px;
+    height: 50px; }
+    
+.catwrap:after {
+    content: '';
+    border-right: 1px solid var(--light3);
+    border-bottom: 1px solid var(--light3);
+    display: flex;
+    padding: 5px;
+    position: absolute;
+    bottom: -10px;
+    right: -10px;
+    width: 50px;
+    height: 50px; }
+
+.maintitle {
+    align-self: stretch;
+    writing-mode: vertical-rl;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    box-sizing: border-box;
+    padding: 30px 5px;
+    text-align: right;
+    letter-spacing: 3px;
+    word-spacing: 6px; 
+    position: relative;
+    background: linear-gradient(to top, var(--dark3), var(--color7));
+    border-right: 1px solid var(--black7); }
+        
+.maintitle a:link,
+.maintitle a:active,
+.maintitle a:visited {
+    font: 20px/130% 'Martel', serif; 
+    text-transform: uppercase;
+    color: var(--light7);
+    text-shadow: -2px -2px 10px var(--light5); 
+    transform: rotate(180deg);
+    position: sticky;
+    top: 130px;
+    margin-left: 30px;
+    padding-left: 30px; }
+        
+.maintitle a:hover {
+    color: var(--light); }
+
+.fwrap-flex {
+    width: calc(100% - 60px);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center; 
+    justify-content: space-evenly; }
+
+.fwrap-flex img {
+    object-fit: cover;
+    min-width: 15%; 
+    max-width: 50%;
+}
+
+.fwrap {
+    width: 100%;
+    background: linear-gradient(to top right, var(--black3), var(--dark7)); 
+    min-height: 270px;
+    border-bottom: 1px solid var(--black5); }
+    
+.fwrap:last-child { border: 0; }
+
+.forumname {
+    width: 90%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 30px auto 0px; }
+  
+  .forumname a:link,
+  .forumname a:active,
+  .forumname a:visited {
+    font: 30px/100% 'Aqua', serif;
+    color: var(--light7);
+    text-transform: uppercase;
+    padding-bottom: 10px;
+    letter-spacing: 3px;
+    text-shadow: 2px 2px 20px var(--color5);
+    mix-blend-mode: screen; 
+    transition: color .5s ease-in-out; }
+    
+  .forumname a:hover { color: var(--color7); }
+    
+  .forumname a > span {
+    color: var(--light5);
+    font-size: 25px; }
+    
+  .forumname.forum-new-post a > span {
+    color: var(--color7);
+    animation: flicker 4s infinite; }
+  
+  .forumdesc {
+    width: calc(100% - 150px);
+    max-height: 35px;
+    overflow: auto;
+    margin: 0 auto;
+    border: 1px solid var(--color5);
+    padding: 15px;
+    text-align: justify;
+    font: 11px/140% 'Livvic', sans-serif;
+    letter-spacing: 0.5px;
+    word-spacing: 2px; }
+  
+  .subforums {
+    width: calc(100% - 120px);
+    min-height: 30px;
+    background: var(--color5);
+    margin: 5px auto; 
+    display: flex;
+    flex-wrap: wrap; 
+    align-items: center;
+    justify-content: space-evenly;
+    align-content: space-evenly;
+    outline: 1px solid var(--color7); }
+    
+  .subforums a {
+    padding: 9px;
+    font: 11px/100% 'Martel', serif;
+    text-transform: uppercase; 
+    color: var(--light7);
+    text-shadow: 1px 1px 5px var(--light5); }
+  
+  .lastpost {
+    width: calc(100% - 120px);
+    height: 45px;
+    margin: 5px auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-flow: column nowrap; }
+    
+  .lastpost span {
+    font: 12px/100% 'Aqua', serif;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    padding: 3px; }
+    
+  .lastpost span a {
+    color: var(--color); }
+        
+  .lastpost span:nth-of-type(2) {
+    font: 10px/100% 'Livvic', sans-serif;
+    color: #cdcdcd; }
+    

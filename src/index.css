@@ -1,0 +1,89 @@
+@font-face {
+  font-family: "Phos";
+  src: url("https://files.jcink.net/uploads/noatest001/Phoss___.ttf")
+    format("TrueType");
+}
+@font-face {
+  font-family: 'Aqua';
+  src: url('https://files.jcink.net/uploads/novacodes/aqua.ttf'); }
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #1b1b1b;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color);
+}
+
+body { 
+  background: #1b1b1b;
+  background-size: cover;
+  background-attachment: fixed;
+  font: 11px/100% 'Calibri', sans-serif;
+  color: #cdcdcd; 
+  margin: 0;
+  --color: #4d6d9a;
+  --color3: rgba(77,109,154,0.3); 
+  --color5: rgba(77,109,154,0.5); 
+  --color7: rgba(77,109,154,0.7);
+  --black3: rgba(0,0,0,0.3);
+  --black4: rgba(0,0,0,0.4);
+  --black5: rgba(0,0,0,0.5);
+  --black7: rgba(0,0,0,0.7);
+  --light3: rgba(239,239,239,0.3);
+  --light5: rgba(239,239,239,0.5);
+  --light7: rgba(239,239,239,0.7); 
+  --dark: #1b1b1b; 
+  --dark0: rgba(27,27,27,0);
+  --dark3: rgba(27,27,27,0.3);
+  --dark5: rgba(27,27,27,0.5);
+  --dark7: rgba(27,27,27,0.7); }
+
+a:link,
+a:visited,
+a:active {
+  text-decoration: none;
+  color: var(--color);
+}
+
+.wrapper {
+  width: 100%;
+  padding: 100px 0;
+  position: relative;
+  top: 100vh;
+  left: 0;
+  z-index: 98; 
+  box-sizing: border-box;
+  background: #1b1b1b url('./images/bg.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: initial; }
+
+.innerwrapper {
+  width: calc(100% - 200px);
+  margin: 0 auto;
+  padding: 100px 0;
+  background: var(--black4);
+  outline: 1px solid var(--light3); }
+
+h1 {
+  text-align: center;
+  padding: 40px 0 0 0; 
+  font: 40px/100% 'Aqua', serif;
+  color: var(--color);
+  text-transform: uppercase; }
+  
+h2 {
+  text-align: center;
+  font: 40px/100% 'Martel', serif;
+  color: var(--light7);
+  text-transform: uppercase; }
+  
+h3 {
+  text-align: center;
+  font: 11px/100% 'Livvic', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: var(--color7); }
