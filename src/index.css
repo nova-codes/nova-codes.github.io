@@ -1,48 +1,348 @@
 /* color variables */
 #g1 .filter,
 .g1 {
-  --colorsolid: #5f868e;
-  --darkhex: #2c484e;
-  --six: rgba(95,134,142,0.6);
-  --eight: rgba(95,134,142,0.8);}
+  --color: #4d6d9a;
+  --color3: rgba(77,109,154,0.3); 
+  --color5: rgba(77,109,154,0.5); 
+  --color7: rgba(77,109,154,0.7);
+}
 
 @font-face {
-  font-family: 'Phos';
-  src: url('https://files.jcink.net/uploads/noatest001/Phoss___.ttf') format('TrueType'); }
+  font-family: "Phos";
+  src: url("https://files.jcink.net/uploads/noatest001/Phoss___.ttf")
+    format("TrueType");
+}
 @font-face {
-  font-family: 'Farewell';
-  src: url('https://files.jcink.net/uploads/noatest001/Farewell_Pro_Regular.ttf'); }
+  font-family: 'Aqua';
+  src: url('https://files.jcink.net/uploads/novacodes/aqua.ttf'); }
 
-  ::-webkit-scrollbar { width: 5px; }
-  ::-webkit-scrollbar-track { background: #111; }
-  ::-webkit-scrollbar-thumb { background: var(--colorsolid); }
+::-webkit-scrollbar {
+  width: 5px;
+}
+::-webkit-scrollbar-track {
+  background: #111;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--colorsolid);
+}
 
-  body {
-    background-image: url('https://k.nickpic.host/Bn6zMQ.jpg');
-    background-size: cover;
-    background-attachment: fixed;
-    background-color: #454545; 
-    margin: 0;
-    font: 14px/100% 'Phos', serif; }
-    
-    a:link,
-    a:visited,
-    a:active {
-      text-decoration: none;
-      color: var(--colorsolid); }
-  
-  nav {
-    width: 100%;
-    background-color: #232323;
-    padding: 10px; 
-    box-sizing: border-box;
-    text-align: right;
-    display: flex;
-    justify-content: space-between; 
-    color: white;
-    border-bottom: 5px solid var(--colorsolid);
-    text-transform: uppercase;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 9999; }
+body { 
+  background: #1b1b1b;
+  background-size: cover;
+  background-attachment: fixed;
+  font: 11px/100% 'Calibri', sans-serif;
+  color: #cdcdcd; 
+  margin: 0;
+  --black3: rgba(0,0,0,0.3);
+  --black4: rgba(0,0,0,0.4);
+  --black5: rgba(0,0,0,0.5);
+  --black7: rgba(0,0,0,0.7);
+  --light3: rgba(239,239,239,0.3);
+  --light5: rgba(239,239,239,0.5);
+  --light7: rgba(239,239,239,0.7); 
+  --dark: #1b1b1b; 
+  --dark0: rgba(27,27,27,0);
+  --dark3: rgba(27,27,27,0.3);
+  --dark5: rgba(27,27,27,0.5);
+  --dark7: rgba(27,27,27,0.7); }
+
+a:link,
+a:visited,
+a:active {
+  text-decoration: none;
+  color: var(--colorsolid);
+}
+
+/* navigation */
+nav {
+  width: 100%;
+  background-color: #232323;
+  padding: 10px;
+  box-sizing: border-box;
+  text-align: right;
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  border-bottom: 5px solid var(--colorsolid);
+  text-transform: uppercase;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+}
+
+
+
+#wrapper {
+  width: 60vw;
+  margin: 40px auto;
+}
+
+#innerwrapper {
+  padding: 0px;
+}
+
+.cathead {
+  width: 100%;
+  height: 100px;
+}
+
+.fwrap {
+  width: 100%;
+  background: rgba(11, 11, 11, 0.7);
+  border: 1px solid #111;
+  box-sizing: border-box;
+  padding: 30px;
+  margin-bottom: 5px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.fwrap .fname {
+  font: 11px/100% "Phos", serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-shadow: 1px 1px black;
+  text-align: center;
+  margin: 0 auto 20px;
+}
+
+.fwrap .fname a {
+  color: #eee;
+  padding: 10px 20px;
+  display: inline-block;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.fwrap .fname a:hover {
+  color: var(--colorsolid);
+}
+
+.fwrap .fname a:before {
+  content: "";
+  border-left: 1px solid white;
+  border-top: 1px solid white;
+  padding: 5px;
+  position: absolute;
+  top: 0;
+  left: -5px;
+  transition: all 0.3s ease;
+  -webkit-transform: scale(0);
+}
+
+.fwrap .fname a:after {
+  content: "";
+  border-bottom: 1px solid white;
+  border-right: 1px solid white;
+  padding: 5px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  transition: all 0.3s ease;
+  -webkit-transform: scale(0);
+}
+
+.fwrap .fname a:hover:after,
+.fwrap .fname a:hover:before {
+  -webkit-transform: scale(1);
+}
+
+.fwrap hr {
+  border: 0;
+  height: 20px;
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+  border-left: 1px solid rgba(255, 255, 255, 0.3);
+  border-right: 1px solid rgba(255, 255, 255, 0.3);
+  width: 100%;
+  margin: 0 auto;
+}
+
+.fwrap hr:nth-of-type(2) {
+  border-top: 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.fwrap .laststats {
+  margin-left: 0;
+  width: 150px;
+  height: 100px;
+  text-align: center;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-evenly;
+  color: white;
+}
+
+.fwrap .laststats .last-topic a {
+  font: 13px/100% "Phos", serif;
+  color: #eee;
+  letter-spacing: 1px;
+}
+
+.fwrap .laststats .last-topic a:hover {
+  color: #aaa;
+}
+
+.fwrap .laststats .last-poster a {
+  margin-left: 5px;
+}
+
+.fwrap .laststats .last-date {
+  font-size: 8px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.fwrap .fdesc {
+  width: 300px;
+  min-height: 50px;
+  color: #eee;
+  padding: 0 10px;
+  text-align: justify;
+  line-height: 120%;
+  flex: 1 auto;
+  font-size: 11px;
+}
+
+.fwrap .new {
+  width: 20px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  font-size: 13px;
+  color: #111;
+  margin: 0 auto;
+}
+
+.fwrap .new.forum-new-post {
+  color: var(--colorsolid);
+}
+
+.fwrap .ftoprep {
+  width: 100px;
+  height: 100px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column nowrap;
+}
+
+.fwrap .ftoprep b {
+  font: 15px/150% "Phos", serif;
+  color: var(--colorsolid);
+  text-shadow: 1px 1px black;
+}
+
+.bstats {
+  width: 100%;
+  min-height: 45vh;
+  background: url("https://k.nickpic.host/Bn6wl2.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: inherit;
+  border-top: 10px solid var(--colorsolid);
+  margin-top: 100px;
+}
+
+.bstats .info {
+  width: 100%;
+  min-height: 29vh;
+  background: rgba(26, 26, 26, 0.7);
+  margin-top: 8vh;
+  border-top: 1px solid var(--six);
+  border-bottom: 1px solid var(--six);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bstats .info .stats {
+  width: 60vw;
+  margin: 0 auto;
+  min-height: 25vh;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: space-evenly;
+  position: relative;
+}
+
+.bstats .stats .on-now {
+  height: 100px;
+  overflow: auto;
+  width: 45%;
+  padding: 20px;
+  border-right: 1px solid var(--six);
+  color: white;
+  font: 12px/150% "Phos", serif;
+  text-align: justify;
+}
+
+.bstats .stats .scol1 {
+  width: 45%;
+  margin-left: 5px;
+  height: 100px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-flow: column wrap;
+}
+
+.bstats .stats .scol1 .slinks {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  width: 100%;
+}
+
+.bstats .stats .scol1 .slinks a {
+  text-transform: uppercase;
+  border: 1px solid var(--colorsolid);
+  color: #eee;
+  padding: 5px 10px;
+  margin: 2px;
+  flex: 1 auto;
+}
+
+.bstats .stats .scol1 .welcome {
+  width: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+  font: 15px/100% "Phos", serif;
+  color: #ddd;
+}
+
+.bstats .stats .scol1 .welcome a {
+  align-self: flex-end;
+  margin-right: 5px;
+}
+
+.bstats .stats .numbers {
+  width: 96%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  color: #ddd;
+  border-top: 1px solid var(--six);
+  text-transform: uppercase;
+  font-size: 9px;
+  letter-spacing: 1px;
+}
+
+.bstats .stats .numbers span {
+  display: flex;
+  flex-flow: column;
+  text-align: center;
+  padding: 10px 20px;
+}
+
+.bstats .stats .numbers span b {
+  font: 15px/150% "Phos", serif;
+  color: var(--colorsolid);
+  text-shadow: 1px 1px black;
+}
