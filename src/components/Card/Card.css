@@ -57,7 +57,7 @@
     text-shadow: -2px -2px 10px var(--light5); 
     transform: rotate(180deg);
     position: sticky;
-    top: 130px;
+    top: 50px;
     margin-left: 30px;
     padding-left: 30px; }
         
@@ -74,7 +74,8 @@
 .fwrap-flex img {
     object-fit: cover;
     min-width: 15%; 
-    max-width: 50%;
+    max-width: 40%;
+    border: 3px solid magenta;
 }
 
 .fwrap {
