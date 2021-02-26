@@ -1,15 +1,26 @@
 import React from 'react'
 import './Card.css'
 
-const Card = ({ title, repo, image, alt }) => {
+const Card = ({ title, repo, image, alt, desc, tech }) => {
     return (
         <div className='catwrap'>
             <div className='maintitle'>
-                <a href={repo}> {title} </a>
+                <a title={title}> {title} </a>
             </div>
 
-            <div className='fwrap-flex'>
+            <div className='wrap-flex-col'>
                 <img src={image} alt={alt} />
+            </div>
+
+            <div className='wrap-flex-col'>
+                <div className='desc'>
+                <ul>
+                    <li> {desc} </li>
+                    <li> <a href={repo}> view on github </a> </li>
+                </ul>
+                </div>
+                
+                <div className='technologies'> <span> {tech} </span> </div>
             </div>
         </div>
     )

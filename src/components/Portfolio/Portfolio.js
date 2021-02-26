@@ -12,6 +12,8 @@ const Portfolio = () => {
                 repo={project.href} 
                 image={project.img} 
                 alt={project.alt} 
+                desc={project.desc} 
+                tech={project.technologies}
             />
         );
     }

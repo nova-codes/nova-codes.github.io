@@ -48,9 +48,7 @@
     background: linear-gradient(to top, var(--dark3), var(--color7));
     border-right: 1px solid var(--black7); }
         
-.maintitle a:link,
-.maintitle a:active,
-.maintitle a:visited {
+.maintitle a {
     font: 20px/130% 'Martel', serif; 
     text-transform: uppercase;
     color: var(--light7);
@@ -64,108 +62,62 @@
 .maintitle a:hover {
     color: var(--light); }
 
-.fwrap-flex {
+.wrap-flex {
     width: calc(100% - 60px);
     display: flex;
-    flex-wrap: wrap;
+    flex-flow: row nowrap;
     align-items: center; 
-    justify-content: space-evenly; }
+    align-content: center; 
+    justify-content: center; 
+    min-height: 240px; }
 
-.fwrap-flex img {
+.wrap-flex-col img {
     object-fit: cover;
-    min-width: 15%; 
-    max-width: 40%;
-    border: 3px solid magenta;
+    min-width: 70%; 
+    max-width: 85%;
+    margin: 15px auto;
 }
 
-.fwrap {
-    width: 100%;
-    background: linear-gradient(to top right, var(--black3), var(--dark7)); 
-    min-height: 270px;
-    border-bottom: 1px solid var(--black5); }
-    
-.fwrap:last-child { border: 0; }
+.wrap-flex-col {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  align-content: center; 
+  justify-content: center;
+  padding: 10px; 
+}
 
-.forumname {
-    width: 90%;
-    height: 60px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 30px auto 0px; }
+.technologies {
+  width: 85%;
+  padding: 15px;
+  min-height: 30px;
+  background: var(--color5);
+  margin: 5px auto; 
+  display: flex;
+  flex-wrap: wrap; 
+  align-items: center;
+  justify-content: space-evenly;
+  align-content: space-evenly;
+  text-align: center; 
+  outline: 1px solid var(--color7); }
   
-  .forumname a:link,
-  .forumname a:active,
-  .forumname a:visited {
-    font: 30px/100% 'Aqua', serif;
-    color: var(--light7);
-    text-transform: uppercase;
-    padding-bottom: 10px;
-    letter-spacing: 3px;
-    text-shadow: 2px 2px 20px var(--color5);
-    mix-blend-mode: screen; 
-    transition: color .5s ease-in-out; }
-    
-  .forumname a:hover { color: var(--color7); }
-    
-  .forumname a > span {
-    color: var(--light5);
-    font-size: 25px; }
-    
-  .forumname.forum-new-post a > span {
-    color: var(--color7);
-    animation: flicker 4s infinite; }
-  
-  .forumdesc {
-    width: calc(100% - 150px);
-    max-height: 35px;
-    overflow: auto;
-    margin: 0 auto;
-    border: 1px solid var(--color5);
-    padding: 15px;
-    text-align: justify;
-    font: 11px/140% 'Livvic', sans-serif;
-    letter-spacing: 0.5px;
-    word-spacing: 2px; }
-  
-  .subforums {
-    width: calc(100% - 120px);
-    min-height: 30px;
-    background: var(--color5);
-    margin: 5px auto; 
-    display: flex;
-    flex-wrap: wrap; 
-    align-items: center;
-    justify-content: space-evenly;
-    align-content: space-evenly;
-    outline: 1px solid var(--color7); }
-    
-  .subforums a {
-    padding: 9px;
-    font: 11px/100% 'Martel', serif;
-    text-transform: uppercase; 
-    color: var(--light7);
-    text-shadow: 1px 1px 5px var(--light5); }
-  
-  .lastpost {
-    width: calc(100% - 120px);
-    height: 45px;
-    margin: 5px auto;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    flex-flow: column nowrap; }
-    
-  .lastpost span {
-    font: 12px/100% 'Aqua', serif;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    padding: 3px; }
-    
-  .lastpost span a {
-    color: var(--color); }
-        
-  .lastpost span:nth-of-type(2) {
-    font: 10px/100% 'Livvic', sans-serif;
-    color: #cdcdcd; }
-    
+.technologies span {
+  font: 12px/150% 'Martel', serif;
+  text-transform: uppercase; 
+  color: var(--light7);
+  text-shadow: 1px 1px 5px var(--light5); 
+  word-spacing: 15px; }
+
+.desc {
+  width: 85%;
+  min-height: 85px;
+  margin: 15px auto;
+  border: 1px solid var(--color5);
+  padding: 15px;
+  text-align: justify;
+  font: 14px/140% 'Livvic', sans-serif;
+  letter-spacing: 0.5px;
+  word-spacing: 2px; 
+  align-self: center;}
