@@ -8,9 +8,9 @@ const Footer = () => {
             <footer>
                 <div className='links-con'>
                     <ul className='he-links'>
-                        <li className='he-li he-li1 linkedin'><a target='_blank' rel='noreferrer' href='https://www.linkedin.com/in/hgelliott/'> <FaLinkedin /> </a></li>
-                        <li className='he-li he-li2 tumblr'><a target='_blank' rel='noreferrer' href='https://nova-codes.tumblr.com/'> <FaTumblr /> </a></li>
-                        <li className='he-li he-li3 github'><a target='_blank' rel='noreferrer' href='https://github.com/nova-codes'> <FaGithub /> </a></li>
+                        <li className='he-li he-li1 linkedin'><a href='https://www.linkedin.com/in/hgelliott/'> <FaLinkedin /> </a></li>
+                        <li className='he-li he-li2 tumblr'><a href='https://nova-codes.tumblr.com/'> <FaTumblr /> </a></li>
+                        <li className='he-li he-li3 github'><a href='https://github.com/nova-codes'> <FaGithub /> </a></li>
                     </ul>
                 </div>
             </footer>

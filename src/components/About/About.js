@@ -15,7 +15,7 @@ const About = () => {
 
                     <p> As month six of the state-sanctioned stay-cation loomed closer, my brother offered to help me pay for a coding bootcamp to gain the necessary knowledge to jumpstart a career in web development. I enrolled, and the rest - as they say - is history. <span className='color'>♥</span></p>
 
-                    <span className='resume-btn'><a target='_blank' rel='noreferrer' href={pdf} > view my resume here </a></span>
+                    <span className='resume-btn'><a href={pdf} target='_blank' rel='norefferer'> view my resume here </a></span>
                 </div>
             </div>
         </div>

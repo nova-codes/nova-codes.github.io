@@ -43,7 +43,6 @@
     height: 10px;
     background: transparent;
     -webkit-transform: scaleX(0) scaleY(0);
-    transform: scaleX(0) scaleY(0);
     -webkit-transition: all .3s linear;
     -moz-transition: all .3s linear;
     -o-transition: all .3s linear;
@@ -55,19 +54,16 @@
     border-top: 1px solid var(--light5); 
     top: -10px;
     left: -20px;
-    -webkit-transform-origin: 0% 0%;
-    transform-origin: 0% 0%; }
+    -webkit-transform-origin: 0% 0%; }
     
   #toplinks .buttons a:after {
     border-right: 1px solid var(--light5); 
     border-bottom: 1px solid var(--light5); 
     bottom: -10px;
     right: -20px;
-    -webkit-transform-origin: 100% 100%;
-    transform-origin: 100% 100%; }
+    -webkit-transform-origin: 100% 100%; }
     
   #toplinks .buttons a:hover:before,
   #toplinks .buttons a:hover:after {
-    -webkit-transform: scaleX(1) scaleY(1);
-    transform: scaleX(1) scaleY(1); }
+    -webkit-transform: scaleX(1) scaleY(1); }
 
