@@ -10,25 +10,29 @@ const Nav = () => {
                   to='home'
                   smooth={true}
                   offset={0} 
-                  duration={500}> home </Link>
+                  duration={500}
+                  spy={true}> home </Link>
 
             <Link activeClass='active'
                   to='about'
                   smooth={true}
                   offset={-80} 
-                  duration={500}> about </Link>
+                  duration={500}
+                  spy={true}> about </Link>
 
             <Link activeClass='active'
                   to='portfolio'
                   smooth={true}
                   offset={-80} 
-                  duration={500}> portfolio </Link>
+                  duration={500}
+                  spy={true}> portfolio </Link>
 
             <Link activeClass='active'
                   to='contact'
                   smooth={true}
                   offset={0} 
-                  duration={500}> contact </Link>
+                  duration={500}
+                  spy={true}> contact </Link>
 
             </div>
         </div>

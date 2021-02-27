@@ -16,7 +16,7 @@ const Card = ({ title, repo, image, alt, desc, tech }) => {
                 <div className='desc'>
                 <ul>
                     <li> {desc} </li>
-                    <li> <a href={repo}> view on github </a> </li>
+                    <li> <a target='_blank' rel='noreferrer' href={repo}> view on github </a> </li>
                 </ul>
                 </div>
                 
