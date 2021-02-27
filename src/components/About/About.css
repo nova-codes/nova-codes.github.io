@@ -1,0 +1,46 @@
+.desc2 {
+    width: 85%;
+    min-height: 85px;
+    margin: 15px auto;
+    border: 0px solid var(--color5);
+    padding: 15px;
+    text-align: justify;
+    font: 14px/140% 'Livvic', sans-serif;
+    letter-spacing: 0.5px;
+    word-spacing: 2px; 
+    align-self: center; 
+}
+
+.about-me:first-letter {
+    font: 50px/100% 'Aqua', serif;
+    color: var(--color); 
+    float: left;
+    margin-right: 5px;
+    margin-bottom: 1px; 
+}
+
+.resume-btn {
+    width: 100%;
+    padding: 15px;
+    min-height: 30px;
+    background: var(--color5);
+    margin: 20px auto; 
+    display: flex;
+    flex-wrap: wrap; 
+    align-items: center;
+    justify-content: space-evenly;
+    align-content: space-evenly;
+    text-align: center; 
+    outline: 1px solid var(--color7); 
+    letter-spacing: 4px;
+  }
+    
+.resume-btn a:link, 
+.resume-btn a:active, 
+.resume-btn a:visited {
+    font: 14px/150% 'Martel', serif;
+    text-transform: uppercase; 
+    color: var(--light7);
+    text-shadow: 1px 1px 5px var(--light5); 
+    word-spacing: 15px; 
+}

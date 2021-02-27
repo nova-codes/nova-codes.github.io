@@ -52,7 +52,7 @@ a:active {
 
 .wrapper {
   width: 100%;
-  padding: 0;
+  padding: 0 0 1px 0;
   position: relative;
   top: 100vh;
   left: 0;
@@ -72,7 +72,7 @@ a:active {
 
 h1 {
   text-align: center;
-  padding: 40px 0 0 0; 
+  padding: 0; 
   font: 40px/100% 'Aqua', serif;
   color: var(--color);
   text-transform: uppercase; }
@@ -89,3 +89,42 @@ h3 {
   text-transform: uppercase;
   letter-spacing: 2px;
   color: var(--color7); }
+
+.catwrap {
+  width: calc(100% - 220px);
+  margin: 0 auto 100px;
+  position: relative;
+  outline: 1px solid var(--black7);
+  background: var(--black3);
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: flex-start;
+  justify-content: space-between; }
+  
+.catwrap:before {
+  content: '';
+  border-left: 1px solid var(--light3);
+  border-top: 1px solid var(--light3);
+  display: flex;
+  padding: 5px;
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  width: 50px;
+  height: 50px; }
+  
+.catwrap:after {
+  content: '';
+  border-right: 1px solid var(--light3);
+  border-bottom: 1px solid var(--light3);
+  display: flex;
+  padding: 5px;
+  position: absolute;
+  bottom: -10px;
+  right: -10px;
+  width: 50px;
+  height: 50px; }
+
+.catwrap:last-child {
+  margin-bottom: 0; 
+}
