@@ -19,7 +19,7 @@ const Portfolio = () => {
     }
 
     return (
-        <div>
+        <div id='portfolio'>
             <h1> featured work </h1>
             <div>
                 {projects.map(card)}

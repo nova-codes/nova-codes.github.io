@@ -52,7 +52,7 @@ a:active {
 
 .wrapper {
   width: 100%;
-  padding: 100px 0;
+  padding: 0;
   position: relative;
   top: 100vh;
   left: 0;
@@ -65,7 +65,7 @@ a:active {
 
 .innerwrapper {
   width: calc(100% - 200px);
-  margin: 0 auto;
+  margin: 100px auto;
   padding: 100px 0;
   background: var(--black4);
   outline: 1px solid var(--light3); }

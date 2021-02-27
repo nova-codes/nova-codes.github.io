@@ -10,7 +10,7 @@ const Header = () => {
     }, [])
 
     return (
-        <div>
+        <div id='home'>
             <header>
                 <big className='header load-hidden'> 
                     <span>c</span>osmic <br/>
