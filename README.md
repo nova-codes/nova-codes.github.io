@@ -3,6 +3,7 @@ It's 2021, which means an obligatory portfolio update. What better tech to use t
 
 ## ☆ Act 1: Scene 1 - Prologue
 *... in fair Verona where we lay our scene*
+
 You can view the deployed portfolio [here](https://nova-codes.github.io)
 
 ## ☆ Act 2: Scene 2 - No Fear
