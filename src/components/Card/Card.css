@@ -85,6 +85,11 @@
   align-self: center;
 }
 
+.desc ul {
+  margin: 0;
+  padding: 10px;
+}
+
 .desc ul li {
   margin-bottom: 30px;
   list-style-type: none;
