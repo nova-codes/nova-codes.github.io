@@ -1,6 +1,16 @@
 const projects = [
     {
         id: 1,
+        title: 'I.D.A',
+        href: 'https://github.com/nova-codes/choose-adventure',
+        img: './images/camp-slaughter.png',
+        alt: 'Camp Slaughter Demo',
+        desc: 'A "Choose Your Own Adventure" game to take you back to the 80s.',
+        features: 'Admin dashboard to manage the paths of the story.',
+        technologies: 'React React-Native Axios Express If-Env Use-Sound JSON-Web-Token React-Bootstrap React-Router-DOM MongoDB Node BCrypt Passport Cookie-Parser'
+    },
+    {
+        id: 2,
         title: 'Bops and Hops',
         href: 'https://github.com/nova-codes/Bops-and-Hops',
         img: './images/bops-hops.png',
@@ -10,7 +20,7 @@ const projects = [
         technologies: 'HTML CSS Javascript jQuery AJAX'
     },
     {
-        id: 2,
+        id: 3,
         title: 'Minion Mingle',
         href: 'https://github.com/nova-codes/minion-mingle',
         img: './images/minion.png',
@@ -20,7 +30,7 @@ const projects = [
         technologies: 'Node Express mySQL Sequelize Socket.IO Passport Handlebars'
     },
     {
-        id: 3,
+        id: 4,
         title: 'Dream Burger Simulator',
         href: 'https://github.com/nova-codes/dream-burger-simulator',
         img: './images/burger-app.png',
@@ -30,7 +40,7 @@ const projects = [
         technologies: 'Node Express Handlebars mySQL method-override'
     },
     {
-        id: 4,
+        id: 5,
         title: 'Weather Dashboard',
         href: 'https://github.com/nova-codes/weather-dashboard',
         img: './images/weather.png',
@@ -40,7 +50,7 @@ const projects = [
         technologies: 'HTML CSS Bootstrap Javascript OpenWeatherAPI local-storage'
     },
     {
-        id: 5,
+        id: 6,
         title: 'Password Generator',
         href: 'https://github.com/nova-codes/password-generator',
         img: './images/pass-gen.png',
@@ -50,7 +60,7 @@ const projects = [
         technologies: 'HTML CSS Javascript'
     },
     {
-        id: 6,
+        id: 7,
         title: 'Employee Summary',
         href: 'https://github.com/nova-codes/employee-summary',
         img: './images/emp-summary.png',

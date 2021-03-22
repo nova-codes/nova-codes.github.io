@@ -14,6 +14,7 @@ const Portfolio = () => {
                 alt={project.alt} 
                 desc={project.desc} 
                 tech={project.technologies}
+                feature={project.features}
             />
         );
     }

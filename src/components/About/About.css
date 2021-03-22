@@ -11,12 +11,29 @@
     align-self: center; 
 }
 
-.about-me:first-letter {
+p.about-me {
+    margin-bottom: 25px; 
+}
+
+.about-me::first-letter {
     font: 50px/100% 'Aqua', serif;
     color: var(--color); 
     float: left;
-    margin-right: 5px;
-    margin-bottom: 1px; 
+    padding-right: 5px;  
+    padding-bottom: 1px; 
+}
+
+.about-me:nth-of-type(3)::first-letter {
+    padding: 0 10px 1px; 
+}
+
+.desc2 img {
+    object-fit: cover;
+    min-width: 20%;
+    max-width: 28%; 
+    float: left; 
+    margin: 0px 20px 20px 0;
+    outline: 1px solid var(--color7); 
 }
 
 .resume-btn {
@@ -43,4 +60,8 @@
     color: var(--light7);
     text-shadow: 1px 1px 5px var(--light5); 
     word-spacing: 15px; 
+}
+
+.color {
+    color: var(--color); 
 }

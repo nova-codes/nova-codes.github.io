@@ -1,7 +1,7 @@
 import React from 'react'
 import './Card.css'
 
-const Card = ({ title, repo, image, alt, desc, tech }) => {
+const Card = ({ title, repo, image, alt, desc, tech, feature }) => {
     return (
         <div className='catwrap'>
             <div className='maintitle'>
@@ -16,6 +16,7 @@ const Card = ({ title, repo, image, alt, desc, tech }) => {
                 <div className='desc'>
                 <ul>
                     <li> {desc} </li>
+                    <li> {feature} </li>
                     <li> <a target='_blank' rel='noreferrer' href={repo}> view on github </a> </li>
                 </ul>
                 </div>
